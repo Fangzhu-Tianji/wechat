@@ -1,0 +1,128 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap='itemclick'>
+    <text class="user-motto">这是文章1</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章2</text>
+  </view>
+  <navigator url='../logs/logs' hover-class="none">
+    <view>
+      <text class="user-motto">这是文章3</text>
+    </view>
+  </navigator>
+  <view>
+    <text class="user-motto">这是文章4</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章5</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+  <view>
+    <text class="user-motto">这是文章6</text>
+  </view>
+</view>

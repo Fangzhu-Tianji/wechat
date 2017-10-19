@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/text/text",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#ff4400",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "财视通",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#f40",
+    "backgroundColor": "#567",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/icon1s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/icon2s.png",
+        "text": "日志"
+      }
+    ]
+  },
+  "debug": true
+}

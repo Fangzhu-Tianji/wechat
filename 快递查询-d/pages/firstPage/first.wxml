@@ -1,0 +1,10 @@
+<include src="../templates/header" />
+
+<button> default </button>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary">{{btntxt}}</button>
+<text wx:if="{{show}}">{{text}}11</text>
+<text wx:else>{{text}}22</text>
+<view wx:for="{{new}}" wx:key="*this">{{index}}+{{item}}</view>
+<import src="../templates/footer.wxml" />
+<template is="footer2" data="{{text: '这是导入数据。。。'}}" />  

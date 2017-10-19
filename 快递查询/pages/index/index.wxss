@@ -1,0 +1,6 @@
+/**index.wxss**/
+.inp {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid red;
+}

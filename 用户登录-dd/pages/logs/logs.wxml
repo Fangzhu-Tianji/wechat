@@ -1,0 +1,3 @@
+<view bindtap='itemclick'>
+  <text class="user-motto">这是详情页</text>
+</view>

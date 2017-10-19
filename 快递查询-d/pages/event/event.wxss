@@ -1,0 +1,15 @@
+.view1 {
+  width: 100%;
+  height: 700rpx;
+  background: pink;
+}
+.view2 {
+  width: 100%;
+  height: 500rpx;
+  background: red;
+}
+.view3 {
+  width: 100%;
+  height: 300rpx;
+  background: blue;
+}

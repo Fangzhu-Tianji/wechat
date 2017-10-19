@@ -1,0 +1,7 @@
+<view class="view1" bindtap="viewclick1">
+  <view class="view2" bindtap="viewclick2">
+    <view class="view3" catchtap="viewclick3">
+
+    </view>
+  </view>
+</view>
