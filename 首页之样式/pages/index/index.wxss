@@ -1,0 +1,48 @@
+swiper {
+  width: 100%;
+  height: 375rpx;
+}
+swiper image {
+  width: 100%;
+  height: 375rpx;
+}
+.bc_green {
+  background-color: green;
+  height: 110px;
+}
+.bc_red {
+  background-color: red;
+  height: 110px;
+}
+.bc_yellow {
+  background-color: yellow;
+  height: 110px;
+}
+.bc_blue {
+  background-color: blue;
+  height: 110px;
+}
+.b_bc_green {
+  display: inline-block;
+  background-color: green;
+  width: 50%;
+  height: 100px;
+}
+.b_bc_red {
+  display: inline-block;
+  background-color: red;
+  width: 50%;
+  height: 100px;
+}
+.b_bc_yellow {
+  display: inline-block;
+  background-color: yellow;
+  width: 50%;
+  height: 100px;
+}
+.b_bc_blue {
+  display: inline-block;
+  background-color: blue;
+  width: 50%;
+  height: 100px;
+}

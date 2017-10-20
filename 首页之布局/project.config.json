@@ -9,7 +9,7 @@
 	"compileType": "weapp",
 	"libVersion": "1.6.0",
 	"appid": "wx70f8d195381611c3",
-	"projectname": "yhdl",
+	"projectname": "index-flex",
 	"condition": {
 		"weapp": {
 			"current": -1,

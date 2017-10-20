@@ -26,5 +26,11 @@ Page({
     wx.navigateTo({
       url: '../login/login'
     })
+    // wx.showToast({
+    //   title: '成功11111',
+    //   mask: true,
+    //   // icon: 'success',
+    //   duration: 2000
+    // })
   }
 })
