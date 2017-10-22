@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator url='../logs/logs' open-type="redirect">点击进入下页</navigator>
+</view>

@@ -10,7 +10,10 @@ Page({
     interval: 2000,
     duration: 200,
     toView: 'red',
-    scrollTop: 0
+    scrollTop: 0,
+    iconType: [
+      'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
+    ]
   },
   changeIndicatorDots: function (e) {
     this.setData({

@@ -35,4 +35,16 @@
     <view class="scroll-view-item_b_H b_bc_yellow"></view>
     <view class="scroll-view-item_H b_bc_blue"></view>
   </scroll-view>
-</view> 
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="60"/>
+  </block>
+</view>
+
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active />
+<progress percent="80" active activeColor="red" backgroundColor="pink" show-info />

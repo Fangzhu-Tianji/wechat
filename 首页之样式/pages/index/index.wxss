@@ -46,3 +46,6 @@ swiper image {
   width: 50%;
   height: 100px;
 }
+progress {
+  margin: 2px 0;
+}

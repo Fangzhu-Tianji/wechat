@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <button class='default' bindtap='modal'>模态</button>
+  <button class='default' bindtap='actionSheet'>执行表单</button>
+</view>
