@@ -7,5 +7,11 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <map longitude="114.057868" latitude="22.543099" markers="{{markers}}" bindmarkertap="marker" bindcallouttap="callout"></map>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <button bindtap='setNavigationBarColor'> 设置导航栏 </button>
+  <button bindtap='switchTab'> 跳转到日志 </button>
+
 </view>

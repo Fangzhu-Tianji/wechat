@@ -7,40 +7,12 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    markers: [{
-      id: 0,
-      latitude: 22.543099,
-      longitude: 114.057868,
-      title: 'hhshs',
-      iconPath: '../../images/map.png',
-      width: 50,
-      height: 30,
-      rotate: 0,
-      callout: {
-        content: '这是财视通公司',
-        color: '#ff0000',
-        fontSize: 16,
-        borderRadius: 10,
-        bgColor: '#000000',
-        padding: 10,
-        display: 'ALWAYS'
-      }
-    }]
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.getLocation({
-      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
-      success: function (res) {
-        var latitude = res.latitude
-        var longitude = res.longitude
-        wx.openLocation({
-          latitude: latitude,
-          longitude: longitude,
-          scale: 28
-        })
-      }
+    wx.navigateTo({
+      url: '../logs/logs'
     })
   },
   onLoad: function () {
@@ -69,21 +41,33 @@ Page({
           })
         }
       })
-
-
     }
 
-    wx.getLocation({
-      type: 'wgs84',
-      success: function (res) {
+    wx.getSystemInfo({
+      success: function(res){
         console.log(res);
       }
     })
-    // wx.chooseLocation({
+    console.log(wx.canIUse('getSystemInfo.success.screenWidth'))
+    wx.getNetworkType({
+      success: function(res){
+        console.log(res.networkType);
+      }
+    })
+    // wx.setScreenBrightness({
+    //   value: 1,
     //   success: function(res){
     //     console.log(res);
     //   }
     // })
+    // wx.vibrateLong({
+    //   success: function(){
+
+    //   }
+    // })
+    wx.onUserCaptureScreen(function (res) {
+      console.log('用户截屏了')
+    })
 
   },
   getUserInfo: function(e) {
@@ -94,15 +78,37 @@ Page({
       hasUserInfo: true
     })
   },
-  marker: function(res){
-    console.log(res)
+  tel: function(){
+    wx.makePhoneCall({
+      phoneNumber: '拨打13722222222' //仅为示例，并非真实的电话号码
+    })
   },
-  callout: function(res){
-    console.log(res)
-    wx.openLocation({
-      latitude: 22.543099,
-      longitude: 114.057868,
-      scale: 28
+  scanCode: function(){
+    wx.scanCode({
+      onlyFromCamera: false,
+      success: (res) => {
+        console.log(res)
+      }
+    })
+  },
+  setClipboardData: function(){
+    wx.setClipboardData({
+      data: 'this is 剪切板',
+      success: (res) => {
+        console.log(res);
+      }
+    })
+  },
+  getClipboardData: function(){
+    wx.getClipboardData({
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+  },
+  addPhoneContact: function(){
+    wx.addPhoneContact({
+      firstName: '花花'
     })
   }
 })

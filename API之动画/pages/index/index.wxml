@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view animation="{{animation}}" class="view" style='width: 300rpx; height: 300rpx; background:pink;'>我在做动画</view>
+  <view animation="{{animation2}}" class="view" style='width: 300rpx; height: 300rpx; background:pink;'>我在做动画2</view>
+</view>
+<button type="primary" bindtap="rotate">旋转</button>
+<button type="primary" bindtap="rotate2">旋转2</button>

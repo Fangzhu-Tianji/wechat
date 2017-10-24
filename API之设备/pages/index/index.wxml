@@ -7,5 +7,14 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <map longitude="114.057868" latitude="22.543099" markers="{{markers}}" bindmarkertap="marker" bindcallouttap="callout"></map>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <button bindtap='tel'> 拨打13722222222 </button>
+  <button bindtap='scanCode'> 扫码 </button>
+  <button bindtap='setClipboardData'> 设置剪切板 </button>
+  <button bindtap='getClipboardData'> 获取剪切板 </button>
+  <button bindtap='addPhoneContact'> 添加联系人 </button>
+
 </view>

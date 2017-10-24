@@ -1,11 +1,12 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container" style='background:pink'>
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <map longitude="114.057868" latitude="22.543099" markers="{{markers}}" bindmarkertap="marker" bindcallouttap="callout"></map>
+  <button bindtap='bindViewTap'>开始刷新</button>
+  <button bindtap='bindViewTapStop'>停止刷新</button>
 </view>
