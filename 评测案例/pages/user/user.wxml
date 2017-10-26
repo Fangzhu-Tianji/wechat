@@ -30,5 +30,26 @@
       </view>
       <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
     </view>
+    <view class='wrap' bindtap='goMap'>
+      <view class='info'>
+        <image class='icon' src="../../images/user-pay.svg" mode="aspectFill"></image>
+        <text>我的地址</text>
+      </view>
+      <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
+    </view>
+    <view class='wrap' bindtap='goTel'>
+      <view class='info'>
+        <image class='icon' src="../../images/user-pay.svg" mode="aspectFill"></image>
+        <text>我的电话</text>
+      </view>
+      <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
+    </view>
+    <view class='wrap' bindtap='goPhoto'>
+      <view class='info'>
+        <image class='icon' src="../../images/user-pay.svg" mode="aspectFill"></image>
+        <text>我的相册</text>
+      </view>
+      <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
+    </view>
   </view>
 </view>

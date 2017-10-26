@@ -4,6 +4,7 @@
     "pages/evaluat/evaluat",
     "pages/test/test",
     "pages/user/user",
+    "pages/photo/photo",
     "pages/login/login"
   ],
   "window":{
