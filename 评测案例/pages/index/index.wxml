@@ -19,9 +19,9 @@
 
     <view class="content">
       <view class="content-item" wx:for="{{contentItem}}" wx:key="*this">
-        <image src="../../images/img1.jpg" mode="aspectFill" />
+        <image src="{{item.image}}" mode="aspectFill" />
         <view class="content-item-text">
-        <text>这里是标题</text>
+        <text>{{item.title}}</text>
         </view>
       </view>
     </view>
@@ -37,15 +37,15 @@
 
     <view class="list-item" wx:for="{{listItem}}" wx:key="*this">
       <view class="list-item-images">
-        <image class='img' src="../../images/img2.jpg" mode="aspectFill" />
-        <image class='avatar' src="../../images/avatar.jpg" mode="aspectFill" />
+        <image class='img' src="{{item.image}}" mode="aspectFill" />
+        <image class='avatar' src="{{item.userimg}}" mode="aspectFill" />
       </view>
       <view class="list-item-text">
         <view class="list-item-text-title">
-          <text>标题标题标题</text>
+          <text>{{item.title}}</text>
         </view>
         <view class="list-item-text-content">
-          <text>这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,</text>
+          <text>{{item.content}}</text>
         </view>
       </view>
     </view>

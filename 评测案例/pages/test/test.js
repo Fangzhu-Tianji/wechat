@@ -23,7 +23,6 @@ Page({
         _this.setData({
           info: res.data.data
         })
-        console.log(res.data.data)
       }
     })
   },

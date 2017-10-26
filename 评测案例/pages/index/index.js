@@ -1,3 +1,4 @@
+var indexData = require("../../json/data.js");
 Page({
   data: {
     imgUrls: [
@@ -5,11 +6,16 @@ Page({
       '../../images/banner-1.jpg',
       '../../images/banner-3.jpg'
     ],
-    contentItem: ['','','',''],
+    contentItem: ['', '', '', ''],
     listItem: ['', '', '', '']
   },
   onLoad: function (options) {
-    
+    this.setData({
+      contentItem: indexData.indexGood
+    })
+    this.setData({
+      listItem: indexData.indexHot
+    })
   },
   onShareAppMessage: function (res) {
     return {

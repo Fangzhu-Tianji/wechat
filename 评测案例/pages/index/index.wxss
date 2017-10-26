@@ -101,8 +101,9 @@
 .list-item-text-content {
   color: #666;
   font-size: 12px;
-  padding-bottom: 40rpx;
-
+  padding-bottom: 60rpx;
+}
+.list-item-text-content text {
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
