@@ -9,4 +9,12 @@
       <image class="logo" src="../../images/logo.jpg" mode="aspectFill"></image>
     </view>
   </view>
+
+  <view class="con-wrap">
+    <view class="item">
+      <image class="pic" src="../../images/map.png" mode="aspectFit"></image>
+      <text class="txt">深圳市福田区益田路6001号太平金融大厦28楼</text>
+      <image class="more" src="../../images/user-more.svg" mode="aspectFill"></image>
+    </view>
+  </view>
 </view>

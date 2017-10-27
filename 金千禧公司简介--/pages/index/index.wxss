@@ -26,3 +26,25 @@
   width: 100rpx;
   height: 100rpx;
 }
+.con-wrap {
+  padding: 20rpx 45rpx 0;
+}
+.con-wrap .item {
+  display: flex;
+  align-items: center;
+}
+.con-wrap .item .pic {
+  width: 40rpx;
+  height: 40rpx;
+}
+.con-wrap .item .txt {
+  font-size: 32rpx;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.con-wrap .item .more {
+  width: 30rpx;
+  height: 30rpx;
+}
