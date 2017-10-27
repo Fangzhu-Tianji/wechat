@@ -6,10 +6,27 @@ Page({
     show: "none"
   },
   onLoad: function (options) {
-    this.setData({
-      show: "block"
-    })
     if (app.globalData.userInfo.nickName == null && app.globalData.userInfo.avatarUrl == null){
+      wx.redirectTo({
+        url: '../login/login'
+      })
+    }
+    else if (app.globalData.userInfo.nickName !== null && app.globalData.userInfo.avatarUrl == null) {
+      this.setData({
+        nickName: app.globalData.userInfo.nickName,
+        show: "block"
+      })
+    }
+    else {
+      this.setData({
+        nickName: app.globalData.userInfo.nickName,
+        avatarUrl: app.globalData.userInfo.avatarUrl,
+        show: "block"
+      })
+    }
+  },
+  onShow: function () {
+    if (app.globalData.userInfo.nickName == null && app.globalData.userInfo.avatarUrl == null) {
       wx.redirectTo({
         url: '../login/login'
       })
@@ -60,6 +77,14 @@ Page({
   goPhoto: function(){
     wx.navigateTo({
       url: '../photo/photo'
+    })
+  },
+  goSet: function(){
+    this.setData({
+      show: "none"
+    })
+    wx.navigateTo({
+      url: '../set/set'
     })
   }
 })

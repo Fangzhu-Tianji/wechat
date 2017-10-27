@@ -2,9 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/evaluat/evaluat",
-    "pages/test/test",
     "pages/user/user",
     "pages/photo/photo",
+    "pages/set/set",
     "pages/login/login"
   ],
   "window":{
@@ -30,12 +30,6 @@
         "text": "评测",
         "iconPath": "images/evaluat.png",
         "selectedIconPath": "images/evaluat-a.png"
-      },
-      {
-        "pagePath": "pages/test/test",
-        "text": "测试",
-        "iconPath": "images/test.png",
-        "selectedIconPath": "images/test-a.png"
       },
       {
         "pagePath": "pages/user/user",

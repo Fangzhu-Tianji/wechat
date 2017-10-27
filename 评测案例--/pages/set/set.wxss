@@ -1,0 +1,43 @@
+page {
+  background-color: #f6f6f6;
+}
+.import {
+  margin: 30rpx 0;
+}
+.section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 35rpx;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-left: none;
+  border-right: none;
+}
+.section .wrap {
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1px solid #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .wrap:last-child {
+  border-bottom: none;
+}
+.section .wrap .info {
+  height: 90rpx; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .wrap text {
+  font-size: 34rpx;
+  color: #333;
+}
+.section .wrap .sup {
+  width: 30rpx;
+  height: 30rpx; 
+}
+.out-login {
+  width: 92%;
+}

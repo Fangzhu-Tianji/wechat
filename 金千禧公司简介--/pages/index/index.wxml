@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo-wrap">
+    <view class="content">
+      <view class="txt">
+        <view class="name">金千禧金融控股</view>
+        <view class="slogan">金融投资  多元产业</view>
+      </view>
+      <image class="logo" src="../../images/logo.jpg" mode="aspectFill"></image>
+    </view>
+  </view>
+</view>

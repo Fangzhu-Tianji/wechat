@@ -1,4 +1,4 @@
-<scroll-view style="height: 100%" scroll-y  bindscroll='scroll' bindscrolltolower="tolower" >
+<scroll-view style="height: 100%" scroll-y  bindscroll='scroll' bindscrolltolower="tolower" enable-back-to-top="true" scroll-top="{{scrollTop.top}}" scroll-with-animation="true" >
   <view class="container">
     <view class='wrap' wx:for='{{pix}}' wx:key='*this'>
       <!-- <image src='{{item}}' data-src='{{item}}' mode='aspectFill'></image> -->
@@ -7,3 +7,6 @@
   </view>
   <image wx:if="{{show}}" class='loading' src='../../images/loading.gif' mode='aspectFill'></image> 
 </scroll-view>
+<view class='goTop' wx:if="{{scrollTop.goTop}}" catchtap='goTop'>
+  <image src='../../images/go-top.png' mode='aspectFill'></image>
+</view>

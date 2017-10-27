@@ -21,3 +21,17 @@ page {
   height: 80rpx;
   margin: 0 auto;
 }
+.goTop {
+  width: 120rpx;
+  height: 180rpx;
+  position: fixed;
+  right: 40rpx;
+  bottom: 100rpx;
+  z-index: 99;
+}
+.goTop image {
+  display: block;
+  width: 46rpx;
+  height: 148rpx;
+  margin: 0 auto;
+}

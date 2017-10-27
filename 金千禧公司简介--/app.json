@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2d2d30",
+    "navigationBarTitleText": "金千禧金融控股",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -4,7 +4,11 @@ Page({
   data: {
     show: false,
     numbers: 0,
-    pix: data.photo1
+    pix: data.photo1,
+    scrollTop: {
+      goTop: false,
+      top: 0
+    }
   },
   onLoad: function (options) {
   },
@@ -14,8 +18,18 @@ Page({
       urls: this.data.pix
     })
   },
-  scroll: function(e){
-    // console.log(e)
+  scroll: function (e) {
+    var top = e.detail.scrollTop;
+    if(top > 300){
+      this.setData({
+        "scrollTop.goTop": true
+      })
+    }
+    else {
+      this.setData({
+        "scrollTop.goTop": false
+      })
+    }
   },
   tolower: function(e){
     var _this = this;
@@ -30,8 +44,18 @@ Page({
           numbers: 1,
           show: false
         })
-        console.log(_this.data.pix)
-      }, 2000)
+      }, 1000)
     }    
+  },
+  goTop: function(){
+    var _top = this.data.scrollTop.top;
+    if (_top == 1) {
+      _top = 0;
+    } else {
+      _top = 1;
+    }  
+    this.setData({
+      "scrollTop.top": _top
+    })
   }
 })
