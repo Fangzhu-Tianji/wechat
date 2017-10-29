@@ -7,8 +7,20 @@ Page({
   },
   onLoad: function (options) {
     if (app.globalData.userInfo.nickName == null && app.globalData.userInfo.avatarUrl == null){
-      wx.redirectTo({
-        url: '../login/login'
+      wx.showModal({
+        title: '提示',
+        content: '登录后方能进入个人中心，确定登录？',
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login'
+            })
+          } else if (res.cancel) {
+            wx.switchTab({
+              url: '../index/index'
+            })
+          }
+        }
       })
     }
     else if (app.globalData.userInfo.nickName !== null && app.globalData.userInfo.avatarUrl == null) {
@@ -27,8 +39,20 @@ Page({
   },
   onShow: function () {
     if (app.globalData.userInfo.nickName == null && app.globalData.userInfo.avatarUrl == null) {
-      wx.redirectTo({
-        url: '../login/login'
+      wx.showModal({
+        title: '提示',
+        content: '登录后方能进入个人中心，确定登录？',
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '../login/login'
+            })
+          } else if (res.cancel) {
+            wx.switchTab({
+              url: '../index/index'
+            })
+          }
+        }
       })
     }
     else if (app.globalData.userInfo.nickName !== null && app.globalData.userInfo.avatarUrl == null) {
