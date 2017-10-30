@@ -30,14 +30,17 @@
   padding: 20rpx 45rpx 0;
 }
 .con-wrap .item {
+  height: 90rpx;
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 .con-wrap .item .pic {
-  width: 40rpx;
-  height: 40rpx;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
 }
 .con-wrap .item .txt {
+  width: 600rpx;
   font-size: 32rpx;
   color: #333;
   text-overflow: ellipsis;
@@ -45,6 +48,17 @@
   white-space: nowrap;
 }
 .con-wrap .item .more {
-  width: 30rpx;
-  height: 30rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+.photo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photo-wrap image {
+  width: 32%;
+  height: 215rpx;
+  margin-bottom: 15rpx;
 }
