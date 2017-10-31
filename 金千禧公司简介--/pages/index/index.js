@@ -16,7 +16,7 @@ Page({
     return {
       title: '金融投资  多元产业',
       path: '/page/index',
-      imageUrl: 'http://webapp.jinglih.com/images/wechat/jqx-6.jpg',
+      imageUrl: 'http://webapp.jinglih.com/images/wechat/jqx-1.jpg',
       success: function (res) {
         // 转发成功
       },

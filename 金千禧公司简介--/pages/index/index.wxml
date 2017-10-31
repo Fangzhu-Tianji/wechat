@@ -22,7 +22,7 @@
     </view>
     <view class="item" bindtap="openTel">
       <image class="pic" src="../../images/tel.png" mode="aspectFit"></image>
-      <text class="txt">0755-23947300</text>
+      <text class="txt">0755-23917300</text>
       <image class="more" src="../../images/user-more.svg" mode="aspectFill"></image>
     </view>
     <view class="item">
