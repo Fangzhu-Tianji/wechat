@@ -36,7 +36,7 @@ Page({
   },
   openTel: function(){
     wx.makePhoneCall({
-      phoneNumber: '0755-23947300'
+      phoneNumber: '0755-23917300'
     })
   },
   openImg: function(e){

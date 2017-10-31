@@ -95,7 +95,7 @@ Page({
   },
   goTel: function(){
     wx.makePhoneCall({
-      phoneNumber: '13720345691'
+      phoneNumber: '17688931403'
     })
   },
   goPhoto: function(){
@@ -109,6 +109,11 @@ Page({
     })
     wx.navigateTo({
       url: '../set/set'
+    })
+  },
+  goData: function(){
+    wx.navigateTo({
+      url: '../evaluat/evaluat'
     })
   }
 })

@@ -51,6 +51,13 @@
       </view>
       <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
     </view>
+    <view class='wrap' bindtap='goData'>
+      <view class='info'>
+        <image class='icon' src="../../images/user-photo.png" mode="aspectFill"></image>
+        <text>模拟数据</text>
+      </view>
+      <image class='sup' src="../../images/user-more.svg" mode="aspectFill"></image>
+    </view>
     <view class='wrap' bindtap='goSet'>
       <view class='info'>
         <image class='icon' src="../../images/user-set.png" mode="aspectFill"></image>

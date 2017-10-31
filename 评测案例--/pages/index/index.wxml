@@ -4,7 +4,7 @@
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
       <block wx:for="{{imgUrls}}" wx:key="*this">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" />
+          <image src="{{item}}" class="slide-image" mode="widthFix" />
         </swiper-item>
       </block>
   </swiper>
@@ -13,8 +13,8 @@
   <view class="selection">
 
     <view class="header">
-      <text>精品推荐</text>
-      <text class="text-all">全部精品</text>
+      <text>爆款精品</text>
+      <text class="text-all">全部爆款</text>
     </view>
 
     <view class="content">
@@ -31,8 +31,8 @@
   <view class="selection">
 
     <view class="header">
-      <text>热门评测</text>
-      <text class="text-all">全部评测</text>
+      <text>热门旅游</text>
+      <text class="text-all">全部旅游</text>
     </view>
 
     <view class="list-item" wx:for="{{listItem}}" wx:key="*this">

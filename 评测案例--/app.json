@@ -26,12 +26,6 @@
         "selectedIconPath": "images/index-a.png"   
       },
       {
-        "pagePath": "pages/evaluat/evaluat",
-        "text": "评测",
-        "iconPath": "images/evaluat.png",
-        "selectedIconPath": "images/evaluat-a.png"
-      },
-      {
         "pagePath": "pages/user/user",
         "text": "我的",
         "iconPath": "images/user.png",
