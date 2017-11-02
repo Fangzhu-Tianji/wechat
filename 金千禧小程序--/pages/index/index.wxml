@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class='swiper' indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 集团简介 -->
+  <view class="summary">
+    <view class="head">集团简介</view>
+    <view class="content">深圳市金千禧金融控股有限公司2012年创建于深圳前海，是一家快速成长的金融机构。公司秉持多元化发展战略，积极投资房地产、健康医疗、科技金融等领域，以高度专业化的价值发掘和创新能力深耕资本市场，创新金融服务，完善产业布局，优化业务结构，现已成长为集资产管理、财富管理和科技金融三大产业为一体的多元化金融控股集团。</view>
+    <view class="content">公司注册资本1亿元人民币，私募基金管理人备案号P1008368，核心团队由逾10年以上金融、投行、产业基金等投资经验的专业人士组成，累计管理资产逾70亿人民币。</view>
+    <view class="content">金千禧立足深圳金融发展的核心区域，汇聚粤港澳大湾区经济发展力量，积极为高净值客户和企业机构提供全方位金融服务，致力于成为引领金融创新发展的行业先锋。</view>
+  </view>
+  <!-- 产品布局 -->
+  <view class="product">
+    <view class="head">集团简介</view>
+  </view>
+</view>

@@ -20,13 +20,15 @@ Page({
   onShareAppMessage: function (res) {
     return {
       title: '首页',
-      path: '/page/index',
+      path: '/pages/index/index',
       imageUrl: '../../images/transmit-img.jpg',
       success: function (res) {
         // 转发成功
+        console.log(res)
       },
       fail: function (res) {
         // 转发失败
+        console.log(res)
       }
     }
   }

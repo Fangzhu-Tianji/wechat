@@ -13,9 +13,13 @@ Page({
     
   },
   onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
     return {
       title: '金融投资  多元产业',
-      path: '/page/index',
+      path: '/pages/index/index',
       imageUrl: 'http://webapp.jinglih.com/images/wechat/jqx-1.jpg',
       success: function (res) {
         // 转发成功

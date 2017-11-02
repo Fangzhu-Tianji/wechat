@@ -1,0 +1,24 @@
+/**index.wxss**/
+.swiper {
+  width: 100%;
+  height: 400rpx;
+}
+.swiper .slide-image {
+  width: 100%;
+  height: 100%;
+}
+.summary {
+  padding: 130rpx 50rpx 90rpx;
+}
+.summary .head {
+  font-size: 36rpx;
+  color: #141414;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.summary .content {
+  font-size: 26rpx;
+  line-height: 1.8;
+  color: #141414;
+  text-indent: 2em;
+}
