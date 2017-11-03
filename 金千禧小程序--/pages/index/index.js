@@ -8,6 +8,11 @@ Page({
       '../../images/swiper-1.jpg',
       '../../images/swiper-1.jpg',
       '../../images/swiper-1.jpg'
+    ],
+    zizhiImg: [
+      '../../images/zizhi-1.jpg',
+      '../../images/zizhi-2.jpg',
+      '../../images/zizhi-3.jpg'
     ]
   },
 

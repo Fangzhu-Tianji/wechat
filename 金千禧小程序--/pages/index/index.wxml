@@ -16,6 +16,125 @@
   </view>
   <!-- 产品布局 -->
   <view class="product">
-    <view class="head">集团简介</view>
+    <view class="head">产业布局</view>
+    <view class="content">
+      <view class="wrap">
+        <image class="img" src="../../images/product-1.png" mode="aspectFill"></image>
+        <view class="text">房地产</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/product-2.png" mode="aspectFill"></image>
+        <view class="text">大健康</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/product-3.png" mode="aspectFill"></image>
+        <view class="text">科技金融</view>
+      </view>
+    </view>
+  </view>
+  <!-- 集团业务 -->
+  <view class="work">
+    <view class="head">集团业务</view>
+    <view class="wrap">
+      <view class="text text1">
+        <view class="heads">资产管理</view>
+        <navigator url="/page/navigate/navigate?title=navigate">
+          <view class="content">
+            <view>金千禧专注房地产领域物业并购投资和资金融通业务，为客户提供多元化资产管理和投融资服务。</view>
+            <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
+          </view>
+        </navigator>
+      </view>
+      <view class="img">
+        <image src="../../images/work-1.jpg" mode="aspectFill"></image>
+      </view>
+    </view>
+
+    <view class="wrap">
+      <view class="img">
+        <image src="../../images/work-2.jpg" mode="aspectFill"></image>
+      </view>
+      <view class="text text2">
+        <view class="heads">财富管理</view>
+        <navigator url="/page/navigate/navigate?title=navigate">
+          <view class="content">
+            <view>金千禧凭借丰富经验和雄厚资源优势，为高净值人士及企业客户提供全方位的财富管理服务。</view>
+            <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class="wrap">
+      <view class="text text1">
+        <view class="heads">科技金融</view>
+        <navigator url="/page/navigate/navigate?title=navigate">
+          <view class="content">
+            <view>金千禧打造金融服务领域的超级平台“菁鲤汇”，一站式为金融从业者提供全方位服务。</view>
+            <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
+          </view>
+        </navigator>
+      </view>
+      <view class="img">
+        <image src="../../images/work-3.jpg" mode="aspectFill"></image>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 资质荣誉 -->
+  <view class="zizhi">
+    <view class="head">资质荣誉</view>
+    <swiper class='zz-swiper' indicator-dots="true" interval="3000" duration="500" circular="true">
+      <block wx:for="{{zizhiImg}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 成功项目 -->
+  <view class="project">
+    <view class="head">成功项目</view>
+    <view class="content">
+      <view class="wrap">
+        <image class="img" src="../../images/project-1.jpg" mode="aspectFill"></image>
+        <view class="text">大庸府城</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/project-2.jpg" mode="aspectFill"></image>
+        <view class="text">海王</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/project-3.jpg" mode="aspectFill"></image>
+        <view class="text">摩登美业</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/project-4.jpg" mode="aspectFill"></image>
+        <view class="text">名门广场</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/project-5.jpg" mode="aspectFill"></image>
+        <view class="text">盐田壹海城</view>
+      </view>
+      <view class="wrap">
+        <image class="img" src="../../images/project-6.jpg" mode="aspectFill"></image>
+        <view class="text">水晶公寓</view>
+      </view>
+    </view>
+  </view>
+  <!-- 联系我们 -->
+  <view class="contact">
+    <view class="head">联系我们</view>
+    <map class="map"></map>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <image class="img" src="../../images/footer-logo.jpg" mode="aspectFill"></image>
+    <view class="wrap">
+      <view>服务热线：400-966-8883</view>
+      <view>电话：0755-23917300</view>
+      <view>传真：0755-23917303</view>
+      <view>地址：深圳市福田区益田路6001号太平金融大厦28楼</view>
+    </view>
   </view>
 </view>
