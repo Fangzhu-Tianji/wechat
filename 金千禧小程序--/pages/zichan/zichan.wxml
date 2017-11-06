@@ -1,0 +1,2 @@
+<!--pages/zichan/zichan.wxml-->
+<image class="img" mode="widthFix" src="../../images/zichan.jpg"></image>

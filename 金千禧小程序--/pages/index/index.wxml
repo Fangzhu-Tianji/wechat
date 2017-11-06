@@ -38,7 +38,7 @@
     <view class="wrap">
       <view class="text text1">
         <view class="heads">资产管理</view>
-        <navigator url="/page/navigate/navigate?title=navigate">
+        <navigator hover-class="none" url="/pages/zichan/zichan">
           <view class="content">
             <view>金千禧专注房地产领域物业并购投资和资金融通业务，为客户提供多元化资产管理和投融资服务。</view>
             <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
@@ -56,7 +56,7 @@
       </view>
       <view class="text text2">
         <view class="heads">财富管理</view>
-        <navigator url="/page/navigate/navigate?title=navigate">
+        <navigator hover-class="none" url="/page/navigate/navigate?title=navigate">
           <view class="content">
             <view>金千禧凭借丰富经验和雄厚资源优势，为高净值人士及企业客户提供全方位的财富管理服务。</view>
             <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
@@ -68,7 +68,7 @@
     <view class="wrap">
       <view class="text text1">
         <view class="heads">科技金融</view>
-        <navigator url="/page/navigate/navigate?title=navigate">
+        <navigator hover-class="none" url="/page/navigate/navigate?title=navigate">
           <view class="content">
             <view>金千禧打造金融服务领域的超级平台“菁鲤汇”，一站式为金融从业者提供全方位服务。</view>
             <image class="btn" src="../../images/work-btn.png" mode="aspectFill"></image>
@@ -125,7 +125,8 @@
   <!-- 联系我们 -->
   <view class="contact">
     <view class="head">联系我们</view>
-    <map class="map"></map>
+    <!-- <map class="map" longitude="22.54247" latitude="114.05601" scale="14" controls="{{controls}}" markers="{{markers}}" show-location></map> -->
+    <map class="map" longitude="114.05601" latitude="22.54247" scale="14" controls="{{controls}}" markers="{{markers}}" bindmarkertap="markertap" show-location></map>
   </view>
   <!-- 底部 -->
   <view class="footer">
@@ -138,3 +139,4 @@
     </view>
   </view>
 </view>
+<image class="tel" src="../../images/tel.png" mode="aspectFill" bindtap="openTel"></image>

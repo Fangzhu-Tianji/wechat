@@ -13,7 +13,12 @@ Page({
       '../../images/zizhi-1.jpg',
       '../../images/zizhi-2.jpg',
       '../../images/zizhi-3.jpg'
-    ]
+    ],
+    markers: [{
+      id: 0,
+      latitude: 22.54247,
+      longitude: 114.05601
+    }]
   },
 
   /**
@@ -70,5 +75,21 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  // 地图
+  markertap: function(e){
+    wx.openLocation({
+      latitude: 22.54247,
+      longitude: 114.05601,
+      scale: 28,
+      name: '金千禧金融控股',
+      address: '深圳市福田区益田路6001号太平金融大厦28楼'
+    })
+  },
+  // 电话
+  openTel: function(){
+    wx.makePhoneCall({
+      phoneNumber: '0755-23917300'
+    })
   }
 })

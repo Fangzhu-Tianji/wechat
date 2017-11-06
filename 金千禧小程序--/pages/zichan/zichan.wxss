@@ -1,0 +1,5 @@
+/* pages/zichan/zichan.wxss */
+.img {
+  width: 100%;
+  height: auto;
+}
