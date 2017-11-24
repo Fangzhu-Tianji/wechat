@@ -55,7 +55,7 @@
   font-size: 36rpx;
   color: #141414;
   text-align: center;
-  margin-bottom: 40rpx;
+  margin-bottom: 50rpx;
 }
 .work .wrap {
   width: 100%;
@@ -126,7 +126,7 @@
   font-size: 36rpx;
   color: #141414;
   text-align: center;
-  margin-bottom: 40rpx;
+  margin-bottom: 50rpx;
 }
 .project .content {
   padding: 0 20rpx;

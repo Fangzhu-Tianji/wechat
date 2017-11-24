@@ -125,8 +125,8 @@
   <!-- 联系我们 -->
   <view class="contact">
     <view class="head">联系我们</view>
-    <!-- <map class="map" longitude="22.54247" latitude="114.05601" scale="14" controls="{{controls}}" markers="{{markers}}" show-location></map> -->
-    <map class="map" longitude="114.05601" latitude="22.54247" scale="14" controls="{{controls}}" markers="{{markers}}" bindmarkertap="markertap" show-location></map>
+    <!-- <map class="map" longitude="114.05601" latitude="22.54247" scale="14" controls="{{controls}}" markers="{{markers}}" bindmarkertap="markertap" show-location></map>  -->
+    <image class="map" src="../../images/map.jpg" mode="aspectFill" bindtap="mapTap"></image> 
   </view>
   <!-- 底部 -->
   <view class="footer">

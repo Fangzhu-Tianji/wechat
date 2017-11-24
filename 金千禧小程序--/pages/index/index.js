@@ -77,7 +77,7 @@ Page({
     
   },
   // 地图
-  markertap: function(e){
+  mapTap: function(e){
     wx.openLocation({
       latitude: 22.54247,
       longitude: 114.05601,
