@@ -1,6 +1,0 @@
-<view class="content-item" wx:for="{{info.NewsList}}" wx:key="*this">
-  <image src="{{item.HeadImage}}" mode="aspectFill" />
-  <view class="content-item-text">
-  <text>{{item.Title}}</text>
-  </view>
-</view>

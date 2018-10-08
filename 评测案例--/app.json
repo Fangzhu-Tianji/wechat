@@ -1,11 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/evaluat/evaluat",
-    "pages/user/user",
-    "pages/photo/photo",
-    "pages/set/set",
-    "pages/login/login"
+    "pages/my/my",
+    "pages/photo/photo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,14 +19,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/index.png",
-        "selectedIconPath": "images/index-a.png"   
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye-a.png"   
       },
       {
-        "pagePath": "pages/user/user",
+        "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/user.png",
-        "selectedIconPath": "images/user-a.png"
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode-a.png"
       }
     ]
   }

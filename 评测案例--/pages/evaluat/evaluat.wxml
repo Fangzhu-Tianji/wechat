@@ -1,6 +1,0 @@
-<view class="content-item" wx:for="{{info.recent_replies}}" wx:key="*this">
-  <image class='img' src="{{item.author.avatar_url}}" mode="aspectFill" />
-  <view class="content-item-text">
-  <text>{{item.title}}</text>
-  </view>
-</view>
