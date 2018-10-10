@@ -1,4 +1,4 @@
-var data = require('../../json/data.js');
+var data = require('../../../json/data.js');
 var data2 = data.photo2;
 Page({
   data: {

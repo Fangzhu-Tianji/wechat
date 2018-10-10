@@ -4,37 +4,31 @@
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
       <block wx:for="{{imgUrls}}" wx:key="*this">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" mode="widthFix" />
+          <image src="{{item}}" class="slide-image" mode="widthFix" lazy-load="true" />
         </swiper-item>
       </block>
   </swiper>
   </view>
 
   <view class="selection">
-
     <view class="header">
       <text>爆款精品</text>
       <text class="text-all">全部爆款</text>
     </view>
-
     <view class="content">
       <view class="content-item" wx:for="{{contentItem}}" wx:key="*this">
-        <image src="{{item.image}}" mode="aspectFill" />
+        <image src="{{item.image}}" mode="aspectFill" lazy-load="true" />
         <view class="content-item-text">
-        <text>{{item.title}}</text>
+          <text>{{item.title}}</text>
         </view>
       </view>
     </view>
-
   </view>
-
   <view class="selection">
-
     <view class="header">
       <text>热门旅游</text>
       <text class="text-all">全部旅游</text>
     </view>
-
     <view class="list-item" wx:for="{{listItem}}" wx:key="*this">
       <view class="list-item-images">
         <image class='img' src="{{item.image}}" mode="aspectFill" />
@@ -49,9 +43,5 @@
         </view>
       </view>
     </view>
-
-
   </view>
-
-
 </view>

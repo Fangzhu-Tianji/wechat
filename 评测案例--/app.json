@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/my/my",
-    "pages/photo/photo"
+    "pages/tabbar/index/index",
+    "pages/tabbar/my/my",
+    "pages/my/photo/photo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,19 +11,19 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#333",
+    "color": "#333333",
     "selectedColor": "#e60012",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/tabbar/index/index",
         "text": "首页",
         "iconPath": "images/shouye.png",
         "selectedIconPath": "images/shouye-a.png"   
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/tabbar/my/my",
         "text": "我的",
         "iconPath": "images/wode.png",
         "selectedIconPath": "images/wode-a.png"

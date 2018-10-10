@@ -1,7 +1,7 @@
 /**index.wxss**/
 .swiper {
   width: 100%;
-  height: 350rpx;
+  height: 480rpx;
 }
 .swiper .slide-image {
   width: 100%;
