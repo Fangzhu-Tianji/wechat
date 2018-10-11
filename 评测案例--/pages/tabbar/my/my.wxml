@@ -7,6 +7,11 @@
   </view>
 </view>
 <view class='list-wrap'>
+  <view class='list-space' catchtap="goPhone">
+    <image class='pic' src='/images/icon-my-about.png'></image>
+    <text class='txt'>我的相册</text>
+    <text class='iconfont icon-youjiantou sup'></text>
+  </view>
   <view class='list-space' catchtap="goAboutUs">
     <image class='pic' src='/images/icon-my-about.png'></image>
     <text class='txt'>关于我</text>

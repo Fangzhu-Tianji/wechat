@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/tabbar/index/index",
     "pages/tabbar/my/my",
-    "pages/my/photo/photo"
+    "pages/my/photo/photo",
+    "pages/my/about-us/about-us"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "放逐天际",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#333333",
@@ -20,7 +21,7 @@
         "pagePath": "pages/tabbar/index/index",
         "text": "首页",
         "iconPath": "images/shouye.png",
-        "selectedIconPath": "images/shouye-a.png"   
+        "selectedIconPath": "images/shouye-a.png"
       },
       {
         "pagePath": "pages/tabbar/my/my",

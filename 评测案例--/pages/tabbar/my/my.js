@@ -11,10 +11,16 @@ Page({
   onLoad: function (options) {
     
   },
+  //进入我的相册
+  goPhone: function () {
+    wx.navigateTo({
+      url: '/pages/my/photo/photo'
+    })
+  },
   //进入关于我们
   goAboutUs: function () {
     wx.navigateTo({
-      url: '../../user/about-us/about-us'
+      url: '/pages/my/about-us/about-us'
     })
   }
 })
