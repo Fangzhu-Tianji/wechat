@@ -1,12 +1,10 @@
-<scroll-view style="height: 100%" scroll-y  bindscroll='scroll' bindscrolltolower="tolower" enable-back-to-top="true" scroll-top="{{scrollTop.top}}" scroll-with-animation="true" >
-  <view class="container">
-    <view class='wrap' wx:for='{{pix}}' wx:key='*this'>
-      <!-- <image src='{{item}}' data-src='{{item}}' mode='aspectFill'></image> -->
-      <view data-src='{{item}}' style="width: 100%;height: 100%;background:url('{{item}}') no-repeat center top;background-size: cover;" bindtap='previewImage'></view>
-    </view>
-  </view>
-  <image wx:if="{{show}}" class='loading' src='../../images/loading.gif' mode='aspectFill'></image> 
-</scroll-view>
+<view class="container">
+  <view wx:for="{{pic}}" wx:key="item" class="wrap" data-src="{{item}}" style="background:url('{{item}}') no-repeat center top;background-size: cover;" catchtap="previewImage"></view>
+</view>
+<!-- 加载动画 -->
+<view class="loading-up" hidden="{{upLoading == 0 || upLoading == 2}}">正在加载...</view>
+<view class="loading-up loading-up-complete" hidden="{{upLoading == 0 || upLoading == 1}}">已加载全部</view>
+<!-- 回到顶部 -->
 <view class='goTop' wx:if="{{scrollTop.goTop}}" catchtap='goTop'>
-  <image src='../../images/go-top.png' mode='aspectFill'></image>
+  <image src='/images/go-top.png' mode='aspectFill'></image>
 </view>

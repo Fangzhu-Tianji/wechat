@@ -1,25 +1,33 @@
 var data = require('../../../json/data.js');
-var data2 = data.photo2;
 Page({
   data: {
-    show: false,
-    numbers: 0,
-    pix: data.photo1,
+    upLoading: 0, //是否显示上拉加载
+    page: 1, //分页的页数
+    total_pages: 3, //总分页数
+    pic: data.photo1,
     scrollTop: {
-      goTop: false,
+      goTop: true,
       top: 0
     }
   },
   onLoad: function (options) {
   },
+  // 预览图片
   previewImage: function(e){
     wx.previewImage({
       current: e.target.dataset.src,
-      urls: this.data.pix
+      urls: this.data.pic
     })
   },
-  scroll: function (e) {
-    var top = e.detail.scrollTop;
+  // 回到顶部
+  goTop: function(){
+    wx.pageScrollTo({
+      scrollTop: 0
+    })
+  },
+  // 获取滚动高度
+  onPageScroll: function (e) {
+    var top = e.scrollTop;
     if(top > 300){
       this.setData({
         "scrollTop.goTop": true
@@ -30,32 +38,36 @@ Page({
         "scrollTop.goTop": false
       })
     }
-  },
-  tolower: function(e){
-    var _this = this;
-    if (_this.data.numbers == 0){
-      var pixs = _this.data.pix;
-      _this.setData({
-        show: true
-      })
-      var timeOut = setTimeout(function () {
-        _this.setData({
-          pix: pixs.concat(data2),
-          numbers: 1,
-          show: false
-        })
-      }, 1000)
-    }    
-  },
-  goTop: function(){
-    var _top = this.data.scrollTop.top;
-    if (_top == 1) {
-      _top = 0;
-    } else {
-      _top = 1;
-    }  
     this.setData({
-      "scrollTop.top": _top
+      "scrollTop.top": top
     })
+  },
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    var _this = this;
+    _this.data.page++;
+    //如果只有一页就不显示分页
+    if (_this.data.total_pages == 1) {
+      return;
+    }
+    if (_this.data.page > _this.data.total_pages) {
+      //重置上拉加载
+      _this.setData({
+        upLoading: 2
+      })
+    }
+    else {
+      _this.setData({
+        upLoading: 1
+      })
+      setTimeout(function () {
+        var a = 'photo' + _this.data.page;
+        _this.setData({
+          pic: _this.data.pic.concat(data[a])
+        })
+      }, 1000);
+    }
   }
 })

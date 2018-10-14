@@ -9,19 +9,23 @@
       </block>
   </swiper>
   </view>
-
   <view class="selection">
     <view class="header">
       <text>爆款精品</text>
-      <text class="text-all">全部爆款</text>
+      <text class="text-all" catchtap="hotAll">全部爆款</text>
     </view>
     <view class="content">
-      <view class="content-item" wx:for="{{contentItem}}" wx:key="*this">
+      <good-list id="goodList"
+        wx:for="{{contentItem}}"
+        wx:key="item"
+        content="{{item}}">
+      </good-list>
+      <!-- <view class="content-item" wx:for="{{contentItem}}" wx:key="item">
         <image src="{{item.image}}" mode="aspectFill" lazy-load="true" />
         <view class="content-item-text">
           <text>{{item.title}}</text>
         </view>
-      </view>
+      </view> -->
     </view>
   </view>
   <view class="selection">
@@ -29,10 +33,10 @@
       <text>热门旅游</text>
       <text class="text-all">全部旅游</text>
     </view>
-    <view class="list-item" wx:for="{{listItem}}" wx:key="*this">
+    <view class="list-item" wx:for="{{listItem}}" wx:key="item">
       <view class="list-item-images">
-        <image class='img' src="{{item.image}}" mode="aspectFill" />
-        <image class='avatar' src="{{item.userimg}}" mode="aspectFill" />
+        <image class='img' src="{{item.image}}" mode="aspectFill" lazy-load="true" />
+        <image class='avatar' src="{{item.userimg}}" mode="aspectFill" lazy-load="true" />
       </view>
       <view class="list-item-text">
         <view class="list-item-text-title">
@@ -45,3 +49,7 @@
     </view>
   </view>
 </view>
+<dialog id="dialog"
+  content="是否进入全部爆款页面"
+  bind:confirmEvent="_confirmEvent">
+</dialog>

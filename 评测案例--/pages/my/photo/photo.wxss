@@ -5,21 +5,15 @@ page {
 .container {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 4% 2%;
+  padding: 0 20rpx;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .wrap {
-  width: 49%;
-  height: 300rpx;
-  margin-bottom: 15rpx;
-}
-.loading {
-  display: block;
-  width: 80rpx;
-  height: 80rpx;
-  margin: 0 auto;
+  width: 345rpx;
+  height: 345rpx;
+  margin-bottom: 20rpx;
 }
 .goTop {
   width: 120rpx;

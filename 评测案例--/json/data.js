@@ -78,9 +78,13 @@ const photo2 = [
   'http://img.ugirls.tv/uploads/magazine/content/22c4a810950e5edfa95045f5db53bd05_magazine_web_m.jpg',
   'http://img.ugirls.tv/uploads/magazine/content/3e3f5641e3ec87cede29db18cf0acc51_magazine_web_m.jpg'
 ]
+const photo3 = [
+  'https://images.unsplash.com/7/Top_view.jpg?ixlib=rb-0.3.5&s=f9cf296cd8f5054d1b563ce7e9d5531d&auto=format&fit=crop&w=500&q=60',
+]
 module.exports = {
   indexGood: indexGood,
   indexHot: indexHot,
   photo1: photo1,
   photo2: photo2,
+  photo3: photo3
 }

@@ -16,7 +16,19 @@ Page({
     this.setData({
       listItem: indexData.indexHot
     })
+    //自定义组件弹框
+    this.dialog = this.selectComponent('#dialog');
   },
+  // 全部爆款
+  hotAll: function () {
+    this.dialog.showDialog();
+  },
+  // 自定义组件dialog点击确定
+  _confirmEvent: function () {
+    console.log('进入爆款页面');
+    this.dialog.hideDialog();
+  },
+  // 转发分享
   onShareAppMessage: function (res) {
     return {
       title: '首页',
